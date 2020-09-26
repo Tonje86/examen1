@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A microsite where you can keep track with different launches in to space">
+    <meta name="author" content="Tonje Eira">
+    <meta name="keywords:" content="space, universe, rocket">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Nanum+Gothic+Coding&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Space launches - Home</title>
+</head>
+
+<body>
+
+    <header class="header-content">
+        <div class="dropdown-menu">
+            <button onclick="dropDownFunction()" class="menubtn">Menu</button>
+            <div id="menuDropdown" class="menu-content">
+                <a href="launches.html">Launches</a>
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+        </div>
+        <h1 class="header-h1">Space launches</h1>
+    </header>
+
+    <div class="next-launch">
+        <h2>Next launch in:</h2>
+
+        <div class="countdown">
+            <div class="months"></div>
+            <div class="days"></div>
+            <div class="hours"></div>
+            <div class="minutes"></div>
+            <div class="seconds"></div>
+        </div>
+    </div>
+
+    <div class="welcome-text">
+        <p>Welcome to this microsite where you can keep track with all the upcoming launches, but also
+            view the previous ones.
+        </p>
+    </div>
+
+    <div class="homepage-img">
+        <img src="images/launch-pad.jpg" alt="Big launch pad with a space shuttle ready for takeoff">
+    </div>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="launches.html">Launches</li></a>
+            <li><a href="about.html">About us</li></a>
+            <li><a href="contact.html">Contact us</li></a>
+        </ul>
+        <div class="socialmedia">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+    </footer>
+
+    <script src="js/countdown.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A microsite where you can keep track with different launches in to space">
+    <meta name="author" content="Tonje Eira">
+    <meta name="keywords:" content="space, universe, rocket">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Nanum+Gothic+Coding&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Space launches - Contact us</title>
+</head>
+
+<body>
+
+    <header class="header-content">
+        <div class="dropdown-menu">
+            <button onclick="dropDownFunction()" class="menubtn">Menu</button>
+            <div id="menuDropdown" class="menu-content">
+                <a href="launches.html">Launches</a>
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+        </div>
+        <h1 class="header-h1"><a href="index.html">Space launches</a></h1>
+    </header>
+    <div class="navpath"><a href="index.html">Space launches</a> - Contact us</div>
+
+    <h2 class="h2-contact">Contact us</h2>
+
+    <div class="contact-form">
+        <form id="contactForm">
+            <div class="form-fields">
+                <input class="form-control" type="text" name="name" id="firstName" placeholder="Your first name" />
+                <div class="form-error" id="firstNameError">Please enter your first name</div>
+            </div>
+
+            <div class="form-fields">
+                <input class="form-control" type="text" name="name" id="lastName" placeholder="Your last name" />
+                <div class="form-error" id="lastNameError">Please enter your last name</div>
+            </div>
+
+            <div class="form-fields">
+                <input class="form-control" name="email" id="email" placeholder="Email" />
+                <div class="form-error" id="emailError">Please enter your email address</div>
+                <div class="form-error" id="invalidEmailError">Please enter a valid email address</div>
+            </div>
+
+            <div class="form-fields">
+                <textarea class="form-control" name="subject" id="subject"
+                    placeholder="Please let us know what you wonder about (at least ten characters)"></textarea>
+                <div class="form-error" id="subjectError">Are you not wondering about anything?</div>
+            </div>
+
+            <button type="submit" class="contact-form-btn" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="contact-text">
+        <p class="contact-infotext">
+            If you don't want to contact us via this contact form, you can reach us by email, phone or
+            regular mail as listed below.
+        </p>
+
+        <div class="email-telephone">
+            Email us at: <a href="mailto:Spacelaunches@spacepsace@space.com">Spacelaunches@spacepsace@space.com</a>
+            <p>Call us at: <a href="tel:123-456-7890">123-456-7890</a></p>
+        </div>
+
+        <h4 class="h4-address">Address</h4>
+        <address>
+            Space Launch
+            Spaceroad 15
+            9999 Spacearea
+        </address>
+    </div>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="launches.html">Launches</li></a>
+            <li><a href="about.html">About us</li></a>
+            <li><a href="contact.html">Contact us</li></a>
+        </ul>
+        <div class="socialmedia">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+    </footer>
+
+
+    <script src="js/contact.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+/*--------------- Colors ---------------
+
+#fff
+#000
+#777
+#363636
+#F2A30F
+#8D8D8A
+#0c0c0c
+#c2c2c2
+#b6b6b6
+
+
+--*/
+
+
+/*----------------- Fonts ---------
+
+Nanum Gothic Coding', monospace
+Baloo Tammudu 2', cursive
+
+--*/
+
+* { box-sizing: border-box;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #000;
+  font-family: 'Nanum Gothic Coding', monospace;
+  color: #fff;
+}
+
+/*----------------------- Nav ------------------------- */
+
+.menubtn {
+    all: unset;
+    cursor: pointer;
+    padding: 15px 50px;
+    border: 1px solid #F2A30F;
+    background-color: #000;
+    border-radius: 3px;
+    color: #F2A30F;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.menubtn:hover {
+    cursor: pointer;
+    background-color: #F2A30F;
+    color: #000;
+}
+.dropdown-menu {
+    float: right;
+    margin-right: 20px;  
+    position: relative;
+    display: inline-block;
+}
+.menu-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    border: 1px solid #F2A30F;
+    border-radius: 3px;
+    min-width: 94%;
+    right: 0;
+    background-color: #000;
+    z-index: 1;
+}
+.menu-content a {
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 15px 20px;
+}
+.menu-content a:hover {
+    background-color: #F2A30F;
+    color: #000;
+}
+.show {display: block;}
+
+.active {
+    background-color: #F2A30F;
+}
+
+/*-------------------- Navigation path ---------------*/
+
+.navpath {
+    margin-top: 10px;
+    color: #c2c2c2;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.navpath a {
+    text-decoration: none;
+    color: #F2A30F;
+}
+.navpath a:hover {
+    color: #8D8D8A;
+}
+
+/*---------------------- Homepage ------------------------*/
+
+.header-content {
+    background-image: url("../images/sunrise.webp");
+    background-repeat: no-repeat;
+    background-color: #000;
+    padding: 50px 0px;
+    border-bottom: 1px solid #F2A30F;    
+}
+.header-h1 {
+    font-size: 26px;
+    font-weight: 400;
+    margin: 50px 0px 0px 10px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: #F2A30F;
+}
+.header-h1 a {
+    text-decoration: none;
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: #F2A30F; 
+}
+.header-h1 a:hover {
+    color: #8D8D8A;
+}
+.next-launch h2 {
+    color: #8D8D8A;
+}
+.next-launch {
+    color: #F2A30F;
+    text-align: center;
+    margin: 30px auto;
+    border: 1px solid #F2A30F;
+    border-radius: 3px;
+    background-color: #0c0c0c;
+    padding: 5px 20px;
+    width: 70%;
+}
+.countdown {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.welcome-text {
+    color: #fff;
+    text-align: center;
+    margin: 40px 20px;
+}
+.homepage-img {
+    display: flex;
+    justify-content: center;
+    margin: 50px 20px;
+}
+.homepage-img img {
+    width: 100%;
+}
+
+
+/*-------------------Launch page ------------------------ */
+
+.launchDetails {
+    display: flex;
+}
+.h2-prevlaunch, .h2-upcomlaunches {
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 50px;
+    color: #fff;
+}
+.upcoming-launches-btn, .previous-launches-btn {
+    all: unset;
+    cursor: pointer;
+    background-color: #000;
+    padding: 9px 20px;
+    border: 1px solid #F2A30F;
+    border-radius: 3px;
+    color: #F2A30F;
+    margin: 35px auto;
+}
+.launch-buttons {
+    display: flex;
+}
+.launch-buttons a {
+    font-size: 14px;
+    text-decoration: none;
+}
+.launch-buttons a:hover {
+    cursor: pointer;
+    background-color: #F2A30F;
+    color: #000;
+}
+.h2-launch-site {
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', cursive;;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;  
+}
+.images {
+    display: flex;
+    margin-top: 10px;
+}
+.launch-images img{
+    width: 100%;
+    padding: 10px;
+}
+.launch-img img {
+    flex: 1;
+}
+/*------------------------ Upcoming and Previous launches ----------------*/
+
+.h2-prevlaunch, .h2-upcomlaunches, .h3-launchinfo {
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-weight: 400;   
+    margin-top: 60px;
+    color: #fff;
+    text-align: center;
+}
+.upcoming-dates, .previous-dates {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #0c0c0c;
+    border: 1px solid #F2A30F;
+    border-radius: 3px; 
+    justify-content: center;
+}
+.upcomingDates, .previousDates {
+    font-family: 'Baloo Tammudu 2', cursive;
+    background-color: #c2c2c2;
+    color: #000;
+    border: 1px solid #F2A30F; 
+    width: 250px;
+    text-align: center;
+    border-radius: 3px;   
+    margin: 10px 10px;   
+}
+.upcomingDates p, .previousDates p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.product-cards {
+    width: 100%;
+    flex-flow: row wrap;
+}
+.details {
+    font-family: 'Baloo Tammudu 2', cursive;
+    background-color: #0c0c0c;
+    border: 1px solid #F2A30F;
+    padding: 40px; 
+    width: 300px;  
+    border-radius: 3px;   
+    margin: 30px auto;
+    text-align: center;
+}
+.flightNumber {
+    color: #fff;
+    font-size: 14px;
+}
+p.launch-date {
+    font-size: 18px;
+    color: #F2A30F;
+}
+.detail-button {
+    color: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    background-color: #000;
+    margin-bottom: 30px;
+}
+.readmore {
+    border: 1px solid #F2A30F;
+    border-radius: 3px;
+    background-color: black;
+    padding: 5px 20px 0px 20px;
+    color: #8D8D8A;
+    text-decoration: none;
+    text-align: center;
+}
+.readmore:hover {
+    background-color: #F2A30F;
+    color: black;
+}
+.details img {
+    width: 150px;
+    padding: 10px;
+}
+.back-on-top {
+    float: right;
+    margin-right: 20px;
+}
+.back-on-top a {
+    text-decoration: none;
+    color: #F2A30F;
+}
+.back-on-top a:hover {
+    color: #fff;
+}
+
+/*-------------------------- About ---------------------------------*/
+
+.about-us {
+    margin: 20px;
+}
+.linkbtn {
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #000;
+    padding: 10px;
+    border: 1px solid #F2A30F;
+    border-radius: 3px;
+    color: #F2A30F;
+    width: 250px;
+}
+.linkbtn:hover {
+    background-color: #F2A30F;
+    color: #000;
+}
+.about-us a {
+    text-decoration: none;
+}
+.about-us h2, h3 {
+    font-family: 'Baloo Tammudu 2', cursive;;
+    font-weight: 500;
+    margin-top: 50px;
+}
+/*-------------------------- Contact us ----------------------------*/
+
+.h2-contact {
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 50px;
+    color: #fff;
+}
+.h4-contact {
+    font-family: 'Baloo Tammudu 2', cursive;;
+    font-weight: 500;
+    color: #8D8D8A;
+}
+.contact-form {
+    font-family: 'Nanum Gothic Coding', monospace;
+    padding: 30px;
+    margin: 20px 20px 35px 20px;
+    border: 1px solid #F2A30F;
+    border-radius: 3px;
+    background-color: #0c0c0c;
+    max-width: 700px;
+}
+.form-error {
+    display: none;
+    color: red;
+    margin-top: 5px;   
+}
+.form-fields {
+    text-align: left;
+    padding: 15px;
+}
+.form-control {   
+    background-color: #fff;
+    padding: 8px 10px;
+    border: 1px solid #F2A30F;
+    border-radius: 3px;
+    width: 100%;
+}
+.form-control:hover {
+    background-color: #b6b6b6;
+}
+.contact-form-btn {
+    all: unset;
+    text-align: center;
+    width: 80px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: 1px solid #F2A30F;
+    background-color: #000;
+    border-radius: 3px;
+    color: #F2A30F;
+}
+.contact-form-btn:hover {
+    cursor: pointer;
+    background-color: #F2A30F;
+    color: #000;
+}
+.contact-text {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.email-telephone, address {
+    margin-top: 35px;
+}
+.email-telephone a {
+    text-decoration: none;
+    color: #F2A30F;
+}
+.email-telephone a:hover {
+    color: #8D8D8A;
+}
+.h4-address {
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color: #F2A30F;
+}
+address {
+    margin-top: 10px;
+    max-width: 130px;
+}
+/*---------------- Footer ------------------*/
+
+footer {
+    background-color: #000;
+    border-top: 1px solid #F2A30F;
+    margin-top: 70px;
+    display: flex;
+    font-family: sans-serif;
+}
+.footer-links {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.1em;;
+}
+.socialmedia {
+    flex: 1;
+    margin-top: 40px;
+    margin-right: 5px;
+}
+footer ul li {
+    list-style-type: none;
+    padding: 5px;
+}
+.socialmedia a, footer ul li a {
+    text-decoration: none;
+    color: #8D8D8A;
+}
+.socialmedia a {
+    font-size: 1.8em;
+    padding: 15px;
+}
+.footer-links a:hover, .socialmedia a:hover {
+    color: #F2A30F;
+}
+.detail-btn {
+    padding: 20px;
+    background-color: #8D8D8A;
+    margin: 10px;
+}
+
+
+/*------------------ Media queries -----------------*/
+
+@media only screen and (min-width: 700px) {
+
+    .header-h1 {
+        font-size: 40px;
+    }
+    .product-cards {
+        display: flex;
+    }
+    .details {
+        margin: 20px auto;
+        width: 350px;
+    }
+    .launch-buttons {
+        float: right;
+        display: block;
+        margin: 20px;  
+    }
+    .h2-launch-site {
+        margin-top: 100px;
+        display: block;
+        text-align: center;
+    }
+    .upcoming-launches-btn, .previous-launches-btn  {  
+        margin: 40px 10px;
+        padding: 15px 40px;
+    }
+    .images {
+        display: flex;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .launch-images img{
+        width: 80%;
+    }
+    .homepage-img img {
+        width: 85%;
+    }
+}
