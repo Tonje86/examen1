@@ -5,7 +5,7 @@ function dropDownFunction() {
 window.onclick = function (event) {
     if (!event.target.matches(".menubtn")) {
 
-        let dropdowns = document.querySelector(".menu-content");
+        const dropdowns = document.querySelector(".menu-content");
 
         for (let i = 0; i < dropdowns.lenght; i++) {
             const openDropdown = dropdowns[i];
