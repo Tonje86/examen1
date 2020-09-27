@@ -488,4 +488,7 @@ footer ul li {
     .homepage-img img {
         width: 85%;
     }
+    .footer-links {
+        margin-left: 150px;
+    }
 }
