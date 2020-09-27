@@ -106,7 +106,7 @@ body {
     background-repeat: no-repeat;
     background-color: #000;
     padding: 50px 0px;
-    border-bottom: 1px solid #F2A30F;    
+   border-bottom: 1px solid #F2A30F;
 }
 .header-h1 {
     font-size: 26px;
@@ -274,7 +274,7 @@ p.launch-date {
     border-radius: 3px;
     background-color: black;
     padding: 5px 20px 0px 20px;
-    color: #8D8D8A;
+    color: #F2A30F;
     text-decoration: none;
     text-align: center;
 }
